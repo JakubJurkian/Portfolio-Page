@@ -11,73 +11,113 @@
       href="https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <div id="container">
-      <div class="image"></div>
-    </div>
-    <main>
-      <div class="about-me">
-        <h1>Jakub Jurkian</h1>
+      <div class="image">
+        <div id="menu">
+          <div id="menu-bar" onclick="menuOnClick()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+          </div>
+          <nav class="nav" id="nav">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Github</a></li>
+              <li><a href="#">Email</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="menu-bg" id="menu-bg"></div>
+        <div class="menu-bg-desktop">
+          <nav class="nav-desktop">
+            <ul>
+              <li>
+                <a href="#"
+                  ><img src="./assets/github-icon.svg" alt="github"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="./assets/email-icon.svg" alt="email"
+                /></a>
+              </li>
+              <li><a href="#"></a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="about-me-on-image">
+          <h1>Jakub Jurkian</h1>
+          <h2>Web Developer</h2>
+        </div>
+      </div>
+      <main>
+        <div class="about-me">
+          <h1>Jakub Jurkian</h1>
+          <h2>Web Developer</h2>
+          <p class="about-me-description">
+            I have been interested in programming since 2021. I specialize in
+            creating applications using React technology. <br />
+            I have experience with tools and technologies such as Git & GitHub,
+            TailwindCSS, Node.js, and many more. <br />I am a first-year student
+            at the University of Gdańsk, majoring in Practical Computer Science.
+            My current academic degree is IT Technician.
+          </p>
+        </div>
+        <div class="projects">
+          <h2>Projects</h2>
+          <ul class="list-of-projects">
+            <li class="project">
+              <a
+                href="https://github.com/JakubJurkian/My-Tech-Blog"
+                target="_blank"
+              >
+                <div>
+                  <img src="./assets/tech-blog-prev.webp" alt="tech-blog-app" />
+                </div>
+              </a>
+            </li>
+            <li class="project">
+              <a
+                href="https://github.com/JakubJurkian/Rock-Paper-Scissors-vanilla-js"
+                target="_blank"
+              >
+                <div>
+                  <img src="./assets/rps-prev.webp" alt="rps-app" />
+                </div>
+              </a>
+            </li>
+            <li class="project">
+              <a
+                href="https://github.com/JakubJurkian/Todo-list-vanilla-js"
+                target="_blank"
+              >
+                <div>
+                  <img src="./assets/to-do-prev.webp" alt="to-do-app" />
+                </div>
+              </a>
+            </li>
+            <li class="project">
+              <a
+                href="https://github.com/JakubJurkian/Calculator-vanilla-js"
+                target="_blank"
+              >
+                <div>
+                  <img src="./assets/calc-prev.webp" alt="calc-app" />
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </main>
+      <footer>
         <p>
-          I have been interested in programming since 2021. I specialize in
-          creating applications using React technology. <br />
-          I have experience with tools and technologies such as Git & GitHub,
-          TailwindCSS, Node.js, and many more. <br />I am a first-year student
-          at the University of Gdańsk, majoring in Practical Computer Science.
-          My current academic degree is IT Technician.
+          Created by Jakub Jurkian <br /><br />Designed by Martyna Korzeniewska
         </p>
-      </div>
-      <div class="projects">
-        <h2>Projects</h2>
-        <ul class="list-of-projects">
-          <li class="project">
-            <a
-              href="https://github.com/JakubJurkian/My-Tech-Blog"
-              target="_blank"
-            >
-              <div>
-                <img src="./assets/tech-blog-prev.webp" alt="tech-blog-app" />
-              </div>
-            </a>
-          </li>
-          <li class="project">
-            <a
-              href="https://github.com/JakubJurkian/Rock-Paper-Scissors-vanilla-js"
-              target="_blank"
-            >
-              <div>
-                <img src="./assets/rps-prev.webp" alt="rps-app" />
-              </div>
-            </a>
-          </li>
-          <li class="project">
-            <a
-              href="https://github.com/JakubJurkian/Todo-list-vanilla-js"
-              target="_blank"
-            >
-              <div>
-                <img src="./assets/to-do-prev.webp" alt="to-do-app" />
-              </div>
-            </a>
-          </li>
-          <li class="project">
-            <a
-              href="https://github.com/JakubJurkian/Calculator-vanilla-js"
-              target="_blank"
-            >
-              <div>
-                <img src="./assets/calc-prev.webp" alt="calc-app" />
-              </div>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </main>
-    <footer>
-      <p>
-        Created by Jakub Jurkian <br /><br />Designed by Martyna Korzeniewska
-      </p>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
