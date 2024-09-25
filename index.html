@@ -14,51 +14,64 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <div id="container">
-      <div class="image">
-        <div id="menu">
-          <div id="menu-bar" onclick="menuOnClick()">
-            <div id="bar1" class="bar"></div>
-            <div id="bar2" class="bar"></div>
-            <div id="bar3" class="bar"></div>
+    <div id="app">
+      <div class="hero">
+        <div id="mobile-menu">
+          <div id="mobile-menu__bar" onclick="menuOnClick()">
+            <div
+              id="mobile-menu__bar-item--1"
+              class="mobile-menu__bar-item"
+            ></div>
+            <div
+              id="mobile-menu__bar-item--2"
+              class="mobile-menu__bar-item"
+            ></div>
+            <div
+              id="mobile-menu__bar-item--3"
+              class="mobile-menu__bar-item"
+            ></div>
           </div>
-          <nav class="nav" id="nav">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="https://github.com/JakubJurkian">Github</a></li>
-              <li><a href="mailto:kuba.jur03@gmail.com">Email</a></li>
+          <nav class="mobile-menu__nav" id="mobile-menu__nav">
+            <ul class="mobile-menu__list">
+              <li class="mobile-menu__list-item"><a href="#">Home</a></li>
+              <li class="mobile-menu__list-item">
+                <a href="https://github.com/JakubJurkian">Github</a>
+              </li>
+              <li class="mobile-menu__list-item">
+                <a href="mailto:kuba.jur03@gmail.com">Email</a>
+              </li>
             </ul>
           </nav>
         </div>
 
-        <div class="menu-bg" id="menu-bg"></div>
-        <div class="menu-bg-desktop">
-          <nav class="nav-desktop">
-            <ul>
-              <li>
+        <div class="mobile-menu-bg" id="mobile-menu-bg"></div>
+        <div id="menu">
+          <nav class="menu__nav">
+            <ul class="menu__list">
+              <li class="menu__list-item">
                 <a href="https://github.com/JakubJurkian" target="_blank"
                   ><img src="./assets/github-icon.svg" alt="github"
                 /></a>
               </li>
-              <li>
+              <li class="menu__list-item">
                 <a href="mailto:kuba.jur03@gmail.com"
                   ><img src="./assets/email-icon.svg" alt="email"
                 /></a>
               </li>
-              <li><a href="#"></a></li>
+              <li class="menu__list-item"><a href="#"></a></li>
             </ul>
           </nav>
         </div>
-        <div class="about-me-on-image">
-          <h1>Jakub Jurkian</h1>
-          <h2>Web Developer</h2>
+        <div class="about-me">
+          <h1 class="about-me__title">Jakub Jurkian</h1>
+          <h2 class="about-me__subtitle">Web Developer</h2>
         </div>
       </div>
       <main>
-        <div class="about-me">
-          <h1>Jakub Jurkian</h1>
-          <h2>Web Developer</h2>
-          <p class="about-me-description">
+        <div class="mobile-about-me">
+          <h1 class="mobile-about-me__title">Jakub Jurkian</h1>
+          <h2 class="mobile-about-me__subtitle">Web Developer</h2>
+          <p class="mobile-about-me__description">
             I have been interested in programming since 2021. I specialize in
             creating applications using React technology. <br />
             I have experience with tools and technologies such as Git & GitHub,
@@ -68,44 +81,44 @@
           </p>
         </div>
         <div class="projects">
-          <h2>Projects</h2>
-          <ul class="list-of-projects">
-            <li class="project">
+          <h2 class="projects__title">Projects</h2>
+          <ul class="projects__list">
+            <li class="projects__list-item">
               <a
                 href="https://github.com/JakubJurkian/My-Tech-Blog"
                 target="_blank"
               >
-                <div>
+                <div class="projects__list-item__image">
                   <img src="./assets/tech-blog-prev.webp" alt="tech-blog-app" />
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="projects__list-item">
               <a
                 href="https://github.com/JakubJurkian/Rock-Paper-Scissors-vanilla-js"
                 target="_blank"
               >
-                <div>
+                <div class="projects__list-item__image">
                   <img src="./assets/rps-prev.webp" alt="rps-app" />
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="projects__list-item">
               <a
                 href="https://github.com/JakubJurkian/Todo-list-vanilla-js"
                 target="_blank"
               >
-                <div>
+                <div class="projects__list-item__image">
                   <img src="./assets/to-do-prev.webp" alt="to-do-app" />
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="projects__list-item">
               <a
                 href="https://github.com/JakubJurkian/Calculator-vanilla-js"
                 target="_blank"
               >
-                <div>
+                <div class="projects__list-item__image">
                   <img src="./assets/calc-prev.webp" alt="calc-app" />
                 </div>
               </a>
