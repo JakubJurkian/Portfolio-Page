@@ -25,8 +25,8 @@ body {
   min-width: 298px;
   background-image: url('./assets/tlo.svg');
   background-repeat: no-repeat;
-  background-size: 120vh;
-  background-position: 30% -14%;
+  background-size: 200vh;
+  background-position: 26% 30%;
 }
 
 .image {
@@ -58,7 +58,6 @@ body {
 }
 
 .about-me h1 {
-  /* color: #d8d8d8; */
   color: white;
   padding: 8px 14px 8px 14px;
   width: 100%;
@@ -77,7 +76,6 @@ body {
   padding: 1rem 0.8rem;
   background-color: #2c3d56;
   color: white;
-  /* color: #d8d8d8; */
   font-size: 1.2rem;
   text-align: left;
   box-shadow: var(--main-box-shadow);
@@ -96,7 +94,6 @@ body {
 }
 
 .projects h2 {
-  /* color: #d8d8d8; */
   color: white;
   padding: 8px 14px 8px 14px;
   width: 90%;
@@ -110,7 +107,8 @@ body {
 .list-of-projects {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 16px;
+  row-gap: 32px;
+  column-gap: 56px;
   list-style-type: none;
   width: 100%;
   padding: 0;
@@ -118,10 +116,9 @@ body {
 
 .project {
   background-color: #404c60;
-  /* border: 1px solid #ccc; */
   border-radius: 8px;
   text-align: center;
-  transition: background-color 0.3s ease;
+  transition: 0.3s ease;
   width: 100%;
   max-width: 320px;
   height: 280px;
@@ -130,6 +127,11 @@ body {
   overflow: hidden;
   margin: 0 auto 0 auto;
   box-shadow: var(--main-box-shadow);
+}
+
+.project:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 32px 24px -32px rgba(66, 68, 90, 1);
 }
 
 .project:nth-child(2n) {
@@ -169,6 +171,7 @@ footer {
   text-align: center;
   color: white;
   font-size: 1rem;
+  box-shadow: var(--main-box-shadow);
 }
 
 .about-me-on-image {
@@ -189,19 +192,20 @@ footer {
 }
 
 .about-me-on-image h1 {
-  /* color: #d8d8d8; */
   color: white;
   padding: 8px 14px 8px 14px;
   width: 100%;
   background-color: #2c3d56;
+  font-size: 1.8rem;
 }
 
 .about-me-on-image h2 {
   color: white;
   padding: 8px 14px 8px 14px;
   width: 100%;
-  margin: 1rem 0 3rem 0;
+  margin: 1rem 0 1rem 0;
   background-color: #2c3d56;
+  font-size: 1.3rem;
 }
 
 #menu {
@@ -271,7 +275,8 @@ footer {
   margin: 16px 0 0 16px;
   background: radial-gradient(circle, white, white);
   border-radius: 50%;
-  /* transition: 0.3s ease; */
+  transition: 0.3s ease;
+  transform: translate(-60%, -30%);
 }
 
 .change {
@@ -311,10 +316,6 @@ footer {
 }
 
 @media (min-width: 576px) {
-  body {
-    background-position: 60% -26%;
-  }
-
   .about-me-on-image {
     display: flex;
   }
@@ -330,8 +331,16 @@ footer {
   }
 
   body {
-    background-size: 160vh;
-    background-position: 40% 10%;
+    background-size: 180vh;
+    background-position: 46% 20%;
+  }
+
+  .about-me-on-image h1 {
+    font-size: 2rem;
+  }
+
+  .about-me-on-image h2 {
+    font-size: 1.5rem;
   }
 
   #menu {
@@ -390,13 +399,5 @@ footer {
     top: 0;
     left: 0;
     position: absolute;
-    /* background-color: red; */
-  }
-}
-
-@media (min-width: 1000px) {
-  body {
-    background-size: 200vw;
-    background-position: 30% 10%;
   }
 }
