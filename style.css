@@ -325,7 +325,7 @@ footer {
   }
 }
 
-@media (min-width: 796px) {
+@media screen and (min-width: 796px) {
   .projects__list {
     grid-template-columns: repeat(2, 1fr);
   }
